@@ -39,10 +39,21 @@
             color: white;
             font-size: 22px;
         }
+        
+        #particles-js {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-image: url("");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"/>
 </head>
 <body style="text-align: center">
+    <div id="particles-js"></div>
     <img src="./logo.png" style="width: 300px;">
     <div class="greedy">
         <div>
@@ -206,26 +217,6 @@
   "retina_detect": true
 });
 
-
-/* ---- stats.js config ---- */
-
-var count_particles, stats, update;
-stats = new Stats;
-stats.setMode(0);
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.left = '0px';
-stats.domElement.style.top = '0px';
-document.body.appendChild(stats.domElement);
-count_particles = document.querySelector('.js-count-particles');
-update = function() {
-  stats.begin();
-  stats.end();
-  if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-    count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-  }
-  requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
     </script>
 </body>
 </html>
