@@ -1,5 +1,5 @@
 <html lang="en">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
 <head>
     <meta charset="UTF-8">
     <title>Augury's 9th Birthday</title>
@@ -28,15 +28,19 @@
         .grid-column-3 {
             grid-column: 3
         }
-        .image {
-            width: 100%;
+        .room-photo {
+            height: 200px;
             margin-top: 20px;
+        }
+
+        .room-icon {
+            height: 1em;
         }
 
         .extra-text {
             color: white;
             background: rgba(10,10,10,0.7);
-            position: absolute
+            position: absolute;
             bottom:0;
             left:0
         }
@@ -68,57 +72,62 @@
     <div class="greedy">
         <div class="grid-row-1 grid-column-1 cat-header">Command</div>
         <div class="grid-row-2 grid-column-1">
-            <a target="_blank" href="meet.google.com/dii-zgqd-xvf">Blue swan room<br>
-                <img class="image" src="./town_hall.JPG"/></a>
+            <a target="_blank" href="meet.google.com/dii-zgqd-xvf">
+                <img class="room-icon" src="./blue-swan.png"/>
+                Blue swan room
+                <img class="room-icon" src="./blue-swan.png"/>
+                <img class="room-photo" src="./town_hall.JPG"/>
+            </a>
         </div>
         <div class="grid-row-3 grid-column-1">
-            <a target="_blank" href="meet.google.com/frt-rkmi-swb">Database<br>
-            <img class="image" src="./town_hall.JPG"/></a>
+            <a target="_blank" href="meet.google.com/frt-rkmi-swb">Database
+            <img class="room-photo" src="./town_hall.JPG"/></a>
         </div>
         <div class="grid-row-1 grid-column-2 cat-header">Party</div>
         <div class="grid-row-2 grid-column-2">
-            <a target="_blank" href="meet.google.com/why-ysfp-ied">The Karaoke Room<br>
-            <img class="image" src="./kareoke.png"/></a>
+            <a target="_blank" href="meet.google.com/why-ysfp-ied">The Karaoke Room
+            <img class="room-photo" src="./kareoke.png"/></a>
         </div>
 
         <div class="grid-row-3 grid-column-2">
-            <a target="_blank" href="meet.google.com/pob-gytk-vvy">Chill out bar<br>
-            <img class="image" src="./cribs.png"/></a>
+            <a target="_blank" href="meet.google.com/pob-gytk-vvy">Chill out bar
+            <img class="room-photo" src="./cribs.png"/></a>
         </div>
         <div class="grid-row-1 grid-column-3 cat-header">Beyond</div>
         <div class="grid-row-2 grid-column-3">
-            <a target="_blank" href="meet.google.com/sgr-qfjm-maz">Room #1<br>
-            <img class="image" src="./dance_moves.jpg"/></a>
+            <a target="_blank" href="meet.google.com/sgr-qfjm-maz">
+                <img class="room-icon" src="./white-swan.png"/>
+                Room #1
+                <img class="room-icon" src="./white-swan.png"/>
+            </a>
+            <img class="room-photo" src="./dance_moves.jpg"/></a>
         </div>
 
         <div class="grid-row-3 grid-column-3">
-            <a target="_blank" href="meet.google.com/uqp-yqxn-cov">Room #2<br>
-            <img class="image" src="./chill_out_break.jpg"/></a>
+            <a target="_blank" href="meet.google.com/uqp-yqxn-cov">
+                <img class="room-icon" src="./black-swan.png"/>
+                Room #2
+                <img class="room-icon" src="./black-swan.png"/>
+            </a>
+            <img class="room-photo" src="./chill_out_break.jpg"/></a>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
-      var setVanta = ()=>{
-        if (window.VANTA) window.VANTA.WAVES({
-          el: "body",
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x22c64,
-          shininess: 66.00,
-          waveHeight: 13.50,
-          waveSpeed: 1.30,
-          zoom: 0.65
-        })
-      }
-      window.setTimeout(() => {
-        setVanta()
-      }, 200)
+      window.VANTA.WAVES({
+        el: "html",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x22c64,
+        shininess: 66.00,
+        waveHeight: 13.50,
+        waveSpeed: 1.50,
+        zoom: 0.65
+      })
     </script>
 </body>
 </html>
