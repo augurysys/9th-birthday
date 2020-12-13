@@ -122,19 +122,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
-      window.VANTA.WAVES({
-        el: "html",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        color: 0x22c64,
-        shininess: 66.00,
-        waveHeight: 13.50,
-        waveSpeed: 1.50,
-        zoom: 0.65
-      })
+      window.addEventListener('DOMContentLoaded', (event) => {
+        window.VANTA.WAVES({
+          el: "html",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x22c64,
+          shininess: 66.00,
+          waveHeight: 13.50,
+          waveSpeed: 1.50,
+          zoom: 0.65
+        })
+      });
+
     </script>
 </body>
 </html>
