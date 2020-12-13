@@ -113,7 +113,7 @@
         <div class="grid grid-row-3 grid-column-3">
             <flex>
                 <img class="room-icon" src="./black-swan.png"/>
-                <a class="room-link" target="_blank" href="meet.google.com/uqp-yqxn-cov">Room #2</a>
+                <a class="room-link room-2" target="_blank" href="meet.google.com/uqp-yqxn-cov">Room #2</a>
                 <img class="room-icon" src="./black-swan.png"/>
             </flex>
             <img class="room-photo" src="./beyond2.gif"/>
@@ -122,7 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
+      $(".room-2").on("load", function(){
         window.VANTA.WAVES({
           el: "html",
           mouseControls: true,
