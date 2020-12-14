@@ -40,7 +40,7 @@
         }
 
         .room-icon {
-            height: 1em;
+            height: 4em;
         }
 
         .greedy {
@@ -64,9 +64,16 @@
             font-size: 22px;
         }
 
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .grid {
             display: grid;
             justify-content: center;
+            align-items: start;
         }
 
         .room-link {
@@ -99,49 +106,55 @@
     <div class="greedy">
         <div class="grid-row-1 grid-column-1 cat-header">Command</div>
         <div class="grid grid-row-2 grid-column-1">
-            <flex>
-                <img class="room-icon" src="./blue-swan.png"/>
+            <div class="flex">
+                <img class="room-icon" src="./swans/Blue-swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/dii-zgqd-xvf">Blue swan room</a>
-                <img class="room-icon" src="./blue-swan.png"/>
-            </flex>
+                <img class="room-icon" src="./swans/Blue-swan.svg"/>
+            </div>
             <img class="room-photo" src="./blue-swan-room.gif"/>
         </div>
         <div class="grid grid-row-3 grid-column-1">
-            <flex>
+            <div class="flex">
+                <img class="room-icon" src="./swans/Nerd-Swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/frt-rkmi-swb">Database</a>
-            </flex>
+                <img class="room-icon" src="./swans/Nerd-Swan.svg"/>
+            </div>
             <img class="room-photo" src="./database.gif"/>
         </div>
         <div class="grid-row-1 grid-column-2 cat-header">Party</div>
         <div class="grid grid-row-2 grid-column-2">
-            <flex>
+            <div class="flex">
+                <img class="room-icon" src="./swans/Singing-Swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/why-ysfp-ied">The Karaoke Room</a>
-            </flex>
+                <img class="room-icon" src="./swans/Singing-Swan.svg"/>
+            </div>
             <img class="room-photo" src="./karaoke.gif"/>
         </div>
 
         <div class="grid grid-row-3 grid-column-2">
-            <flex>
+            <div class="flex">
+                <img class="room-icon" src="./swans/Drinking-swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/pob-gytk-vvy">Chill out bar</a>
-            </flex>
+                <img class="room-icon" src="./swans/Drinking-swan.svg"/>
+            </div>
             <img class="room-photo" src="./chillout.gif"/>
         </div>
         <div class="grid-row-1 grid-column-3 cat-header">Beyond</div>
         <div class="grid grid-row-2 grid-column-3">
-            <flex>
-                <img class="room-icon" src="./white-swan.png"/>
+            <div class="flex">
+                <img class="room-icon" src="./swans/White-swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/sgr-qfjm-maz">Room #1</a>
-                <img class="room-icon" src="./white-swan.png"/>
-            </flex>
+                <img class="room-icon" src="./swans/White-swan.svg"/>
+            </div>
             <img class="room-photo" src="./beyond1.gif"/>
         </div>
 
         <div class="grid grid-row-3 grid-column-3">
-            <flex>
-                <img class="room-icon" src="./black-swan.png"/>
+            <div class="flex">
+                <img class="room-icon" src="./swans/Black-swan.svg"/>
                 <a class="room-link" target="_blank" href="https://meet.google.com/uqp-yqxn-cov">Room #2</a>
-                <img class="room-icon" src="./black-swan.png"/>
-            </flex>
+                <img class="room-icon" src="./swans/Black-swan.svg"/>
+            </div>
             <img class="room-photo room-2" src="./beyond2.gif"/>
         </div>
     </div>
